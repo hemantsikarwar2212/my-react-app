@@ -78,7 +78,7 @@ function App() {
         <div>20000 followers</div>
         <div>12m</div>
       </div>
-        <div>what to k wkffdfnnnnskdnfknkjgndfkngkng</div>
+        <div>what to vcbvnmccccck cwkffdfnnnnskdnfknkjgndfkngkng</div>
     </div>
   }
 
