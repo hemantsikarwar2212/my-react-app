@@ -3,8 +3,19 @@ import React, { useEffect, useState } from 'react';
 import './App.css'
 
 function App() {
+  return (
+    <div style={{display:"flex"}}>
+      <Card children={"hii there"}></Card>
+      <Card children={<div style={{color:"green"}}>
+        <input type={"text"} />
+      </div>}></Card>
+    </div>
+  )
+}
+  
   // const [post,setPost] = useState([]);
-const [count , setCount] = useState(0);
+// const [count , setCount] = useState(0);
+
 
 //   const PostComponents = post.map(post=><PostComponent
 //     name= {post.name}
@@ -51,22 +62,22 @@ const [count , setCount] = useState(0);
     //     </div>
     //   </div>
     // )
-    function incCount(){
-      setCount(currentValue => currentValue+1);
-    }
-     useEffect(()=>{
-      setInterval(incCount,5000)
-     },[])
-    return (
-      <div style={{display:'flex'}}>
-        <div style={{background:"red" , borderRadius:25,width:20,height:20,paddingLeft:10,paddingTop:5}}>{count}</div>
-        <div>
-          <img style={{cursor:"pointer"}} src="https://static.vecteezy.com/system/resources/previews/009/394/758/non_2x/bell-icon-transparent-notification-free-png.png" width={40} alt="notification" />
-        </div>
-      </div>
+  //   function incCount(){
+  //     setCount(currentValue => currentValue+1);
+  //   }
+  //    useEffect(()=>{
+  //     setInterval(incCount,5000)
+  //    },[])
+  //   return (
+  //     <div style={{display:'flex'}}>
+  //       <div style={{background:"red" , borderRadius:25,width:20,height:20,paddingLeft:10,paddingTop:5}}>{count}</div>
+  //       <div>
+  //         <img style={{cursor:"pointer"}} src="https://static.vecteezy.com/system/resources/previews/009/394/758/non_2x/bell-icon-transparent-notification-free-png.png" width={40} alt="notification" />
+  //       </div>
+  //     </div>
 
-    )
-  }
+  //   )
+  // }
 
   // function PostComponent({ name, subtitle, time, img, desc }) {
   //   return (
@@ -80,6 +91,13 @@ const [count , setCount] = useState(0);
   //   );
   // }
 
+function Card({children}){
+  return (
+    <div style={{background:"black",borderRadius:10,color:"white",padding:10,margin:10}}>
+      {children}
+    </div>
+  )
+}
 
 
 
